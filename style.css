@@ -19,4 +19,146 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    color: var(--veryDarkBlue);
+}
+
+main {
+    background-color: var(--veryLightGray);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    min-height: 98vh;
+    padding: 1rem;
+}
+
+/* Header */
+.header {
+    align-items: center;
+    max-width: 30rem;
+    margin:3rem 0;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+}
+
+.header h1 {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.header h2 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.header p {
+    font-size: .9rem;
+    color: var(--grayishBlue);
+    margin-top: 1.2rem;
+
+}
+
+/* Grid div */
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:"col1 mid1 col3" "col1 mid2 col3";
+    gap: 1.3rem;
+    min-width: 70%;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* Cards */
+.card {
+    background-color:white;
+    padding:1.5rem;
+    display: flex;
+    flex-flow: column;
+    border-top: 3px solid;
+    box-shadow: 0px .3rem 1rem -0.3rem rgba(0,0,0,0.1);
+    max-width: 26rem;
+    border-radius: .3rem;
+    width: 100%;
+    justify-self: center;
+}
+
+.card img {
+    align-self: flex-end;
+    max-width:4rem;
+    margin-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+.card h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.card p {
+    margin-top: .5rem;
+    color:var(--grayishBlue);
+    font-size: .8rem;
+    font-weight: 300;
+    width: 75%;
+}
+
+.supervisor {
+    grid-area:col1;
+    border-color: var(--cyan);
+}
+
+.teambuilder {
+    grid-area:mid1;
+    border-color: var(--red);
+}
+
+.karma {
+    grid-area: mid2;
+    border-color: var(--orange);
+}
+
+.calculator {
+    grid-area: col3;
+    border-color: var(--blue);
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    font-weight: 600;
+    background-color: var(--veryLightGray);
+    color:var(--grayishBlue);
+    font-size: .8rem;
+}
+
+footer a {
+    color: var(--veryDarkBlue);
+}
+
+/* Mediaqueries for smaller screens */
+@media screen and (max-width:43.5rem){
+    /* Switched grid to flex col */
+    .grid-content {
+        display: flex;
+        flex-flow: column;
+    }
+    
+    /* Resizing */
+    .card {
+        width: 85%;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        width: 90%;
+    }
+    .card p {
+        width: auto;
+    }
 }
