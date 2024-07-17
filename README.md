@@ -12,14 +12,14 @@ Your challenge is to build out this feature section and get it looking as close 
 Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 
-### Screenshot
+### My Solution Screenshot
 
 ![](./four-card-feature-section_mysolution.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/frontend-mentor-four-card-feature-section-hAXCG5hW-S](https://www.frontendmentor.io/solutions/frontend-mentor-four-card-feature-section-hAXCG5hW-S)
+- Live Site URL: [https://dev-paull.github.io/four-card-feature-section](https://dev-paull.github.io/four-card-feature-section)
 
 ## My process
 
